@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email client project</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/bootstrap.css">
+
+    <!-- use of css -->
+    <style>
+        body{
+        
+            background: url(emailclient/emailclient.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           /* background-position: center; */
+        }
+        #menu{
+            background-color: slategrey;
+            /* color: white; */
+        }
+        .mywebsite{
+            color: white;
+            text-align: center;
+            font-variant: small-caps
+        }
+        #menu-bar{
+            background-color: blueviolet;
+        }
+
+
+.navigation ul{
+   list-style-type: none;
+   /* margin-left: 250px; */
+   text-align: center;
+}
+.navigation ul a{
+    color: white;
+}
+.navigation ul li{
+    display: inline-block;
+    text-align: center;
+    margin:0 0 0 50px;
+    padding: 10px;
+    margin-top: 5px;
+   
+    
+
+}
+.navigation ul li:hover{
+    color: rgb(9, 255, 0);
+    background-color: slategrey;
+}
+.iconbar a{
+    display: none;
+}
+.cross-icon{
+    display: none;
+}
+
+
+#form{
+    margin-top: 20px;
+  
+    /* margin-left: 30%; */
+    
+}
+.input-1{
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 30px;
+  height: 35px;
+}
+.signup{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* background-color: rgb(241, 232, 150); */
+}
+.signup h1{
+    /* text-transform: uppercase;s   */
+    font-size: x-large;
+     font-weight: bolder;
+     /* letter-spacing: 2px; */
+}
+label{
+    margin-top: 5px;
+    font-size: x-large;
+
+}
+.agree{
+  margin: 10px;
+  font-weight: 500;
+}
+.signup1{
+    width: 40%;
+   
+  margin-left: 30%;
+  border-radius: 15px;
+}
+hr{
+      margin-top: 20px;
+      width: 200px;
+      color: blue;
+  
+  }
+  .or{
+      background: lightgreen;
+      width: 30px;
+      margin: -29px auto 10px;
+  }
+  .account{
+      margin: 10px;
+      font-size: large;
+      color: black;
+      font-weight: 480;
+  }
+  #signin{
+      cursor: pointer;
+      color: blue;
+  }
+  
+  @media (max-width: 768px){
+      .navigation{
+    position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 0%;
+            height: 100vh;
+            background-color:black;
+            overflow-x: hidden;
+            z-index: 5;
+            transition: 0.5s all;
+}
+
+
+    .navigation ul li{
+        display: block;
+        text-align: center;
+        
+        
+    }
+    .navigation ul a:hover{
+        text-decoration: none;
+       
+    }
+    
+
+      .iconbar a{
+          display: block;
+          color: white;
+          text-align: right;
+          font-size: x-large;
+          
+
+      }
+    .cross-icon{
+        display: block;
+        color: white;
+          text-align: right;
+          margin: 50px;
+          font-size: xx-large;
+    }
+    .input-1{
+  width: 60%;
+  margin-left: 23%;
+  border-radius: 30px;
+  height: 35px;
+}
+label{
+    margin-top: 5px;
+    font-size: large;
+}
+.signup1{
+    width: 40%;
+   font-size: small;
+  margin-left: 30%;
+  border-radius: 15px;
+
+}
+
+  }
+    </style>
+
+</head>
+
+<body>
+    <div id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mywebsite">
+                        
+                        <h1>my website</h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="menu-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="iconbar">
+
+                        <a href="#" onclick="fun()">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-border-width" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                    
+            
+                         </a>
+                    </div>  
+                   <div class="navigation" id="nav">
+                    <a href="#" class="cross-icon"><div class="var" onclick="fun1()">&times;</div></a>
+                       <ul>
+                         <a href="http://www.manoramainst.com/about-us.php">  <li>home</li></a>
+                         <a href="http://www.manoramainst.com/about-us.php">   <li>ragister</li></a>
+                            <a href="http://www.manoramainst.com/about-us.php">  <li>download</li></a>
+                                <a href="http://www.manoramainst.com/about-us.php">  <li>about us</li></a>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="" class="from-group" >
+                    
+                    <fieldset>
+                        <div class="signup">
+
+                    <h1>Sign Up Now</h1>
+                          <label for="">Enter Your Name</label>
+                          
+                          <input type="text" class="form-control input-1" placeholder="Your Name" required>
+                          
+                          <label for="">Enter Your Email</label>
+                          <input type="email" class="form-control input-1" placeholder="Your Email" required>
+                          <label for="">Enter Your Password</label>
+                          <input type="password" class="form-control input-1" placeholder="Your Password"  required>
+                         <div class="agree"> <input type="checkbox"> i agree to the terms and servise</div>
+                         <button class="btn btn-block btn-primary signup1">Sign Up</button>
+                        <hr>
+                        <p class="or"> or </p>
+                        <a href="http://www.Facebook.com" class="btn btn-block btn-primary signup1">Login With Facebook</a>
+                       <p class="account"> Do you have an Account ? <span id="signin">Sign in</span></p>
+
+                          
+                        </div>
+                </fieldset>
+                </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- use of javascript -->
+<script>
+  
+
+function fun(){
+document.getElementById('nav').style.width="100%";
+}
+function fun1(){
+    document.getElementById('nav').style.width="0%";
+}
+</script>
+      
+</body>
+</html>
